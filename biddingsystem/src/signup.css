@@ -1,0 +1,215 @@
+#signup html,body{
+    width:100%;
+    height: 100%;
+}
+
+.signupheader{
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    background-color: rgb(7, 7, 32);
+    text-align: left;
+    font-family: roboto,monospace;
+    font-size: 20px;
+    line-height: 45px;
+    padding-left: 5px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 0px 6px whitesmoke;
+}
+
+.signupcontent{
+    width : 100%;
+    height: 100%;
+}
+
+.signupbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 80%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #021f4a 0%, #051b42 100%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.signupbox h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.signupbox .user-box {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+label1 {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+  
+
+#progressbar {
+    margin-bottom: 30px;
+    width: 100%;
+    padding-left: 0px;
+    overflow: hidden;
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+  
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    text-align: center;
+    color: #333;
+    background: white;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1; 
+}
+  
+#progressbar li:first-child:after {
+    content: none; 
+}
+  
+#progressbar li.active:before,  #progressbar li.active:after{
+    background: #2575fc;
+    color: white;
+}
+
+
+.fieldset {
+    border: 0 none;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    position: relative;
+}
+  
+fieldset:not(:first-of-type) {
+    display: none;
+}
+
+
+#RT6 {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+#RT6 option {
+    color: #333;
+    background: white;
+}
+.action-button {
+    width: 100px;
+    background: #0e65b6;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #2575fc;
+}
+
+.fs-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+  
+
+.signupfooter{
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    position: fixed;
+    color: white;
+    background-color: rgb(7, 7, 32);
+    justify-content: center;
+    font-family: roboto,monospace;
+    box-shadow: 1px 0px 6px whitesmoke;
+    line-height: 30px;
+    text-align: center;
+}
+.full-height {
+    height: 100vh; /* Set the height of the container to cover the entire viewport */
+    background-image: url('https://bidhive.com/wordpress/wp-content/uploads/2023/12/iStock-1414759778.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your background image */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+}
+
+/* Add any additional styling for the signup box */
+.signupbox {
+    /* Add styling for the signup box if needed */
+}

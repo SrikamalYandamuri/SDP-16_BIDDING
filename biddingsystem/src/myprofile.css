@@ -1,0 +1,8 @@
+.tablestyle{
+    width: 100%;
+}
+
+.tablestyle .firstcolumn{
+    width: 150px;
+    padding: 10px;
+}
